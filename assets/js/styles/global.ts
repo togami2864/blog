@@ -10,6 +10,10 @@ export const GlobalStyle = createGlobalStyle`
     font-family:${(props) => props.theme.fontPrimary};
   }
 
+  a {
+    text-decoration: none;
+  }
+
   ol, ul, dl {
     list-style: none;
     padding: 0;

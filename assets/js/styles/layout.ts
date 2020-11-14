@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
 export const LayoutStyle = styled.div`
-  width: 1000px;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
 `;
