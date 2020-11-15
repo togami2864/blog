@@ -8,7 +8,8 @@ import { getAllPosts } from "../assets/js/helpers/getAllPosts";
 import { sanitizeDate } from "../assets/js/helpers/sanitizeDate";
 
 export default function Home({ allPostsData }: { allPostsData: allPostsData }) {
-  console.log(sanitizeDate(allPostsData));
+  const posts = sanitizeDate(allPostsData).contents;
+  console.log(posts);
   return (
     <div>
       <Head>
@@ -17,18 +18,18 @@ export default function Home({ allPostsData }: { allPostsData: allPostsData }) {
       </Head>
 
       <Lists>
-        <Link href="/">
-          <a>
-            <Title>Create-react-appなしでCreate-react-appぽい環境を作る</Title>
-            <Date>2020-10-11</Date>
-          </a>
-        </Link>
-        <Link href="/">
-          <a>
-            <Title>Create-react-appなしでCreate-react-appぽい環境を作る</Title>
-            <Date>2020-10-11</Date>
-          </a>
-        </Link>
+        {posts.map((post, index) => {
+          return (
+            <div key={index}>
+              <Link href={`/posts/${post.id}`}>
+                <a>
+                  <Title>{post.title}</Title>
+                  <Date>{post.date}</Date>
+                </a>
+              </Link>
+            </div>
+          );
+        })}
       </Lists>
     </div>
   );
