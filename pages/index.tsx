@@ -8,7 +8,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <h1>Welcome to Next.js</h1>
+      <main>
+        <h1>Create-react-appなしでCreate-react-appぽい環境を作る。</h1>
+        <p>2020-10-11</p>
+      </main>
     </div>
   );
 }
