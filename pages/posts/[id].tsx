@@ -1,15 +1,28 @@
+import Highlight from "react-highlight";
 import Head from "next/head";
 import { GetStaticProps, GetStaticPaths } from "next";
 import { getPostId, getPostData } from "../../assets/js/helpers/getPosts";
 
+import styled from "styled-components";
+
 export default function Post({ postData }) {
-  console.log(postData);
+  postData.date = postData.date.slice(0, 10);
   return (
     <>
       <Head>
         <title>{postData.title}</title>
+        <link
+          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/styles/atom-one-light.min.css"
+          rel="stylesheet"
+        />
       </Head>
-      <div></div>
+      <Article>
+        <Title>{postData.title}</Title>
+        <Date>{postData.date}</Date>
+        <Body>
+          <Highlight innerHTML={true}>{postData.body}</Highlight>
+        </Body>
+      </Article>
     </>
   );
 }
@@ -30,3 +43,21 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     },
   };
 };
+
+const Article = styled.div`
+  margin: 40px;
+`;
+
+const Body = styled.div`
+  text-align: left;
+`;
+
+const Title = styled.h1`
+  color: ${(props) => props.theme.color.main};
+  font-size: 40px;
+`;
+
+const Date = styled.p`
+  color: ${(props) => props.theme.color.main};
+  font-size: 20px;
+`;
