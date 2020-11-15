@@ -4,12 +4,11 @@ import styled from "styled-components";
 import { GetStaticProps } from "next";
 
 import { allPostsData } from "../assets/js/types/postData";
-import { getAllPosts } from "../assets/js/helpers/getAllPosts";
+import { getAllPosts } from "../assets/js/helpers/getPosts";
 import { sanitizeDate } from "../assets/js/helpers/sanitizeDate";
 
 export default function Home({ allPostsData }: { allPostsData: allPostsData }) {
   const posts = sanitizeDate(allPostsData).contents;
-  console.log(posts);
   return (
     <div>
       <Head>
