@@ -1,7 +1,7 @@
-import { postIndex } from "../types/postData";
+import { allPostsData } from "../types/postData";
 
 export const getAllPosts = async () => {
-  const allPosts: postIndex = await fetch(
+  const allPosts: allPostsData = await fetch(
     "https://devtogami.microcms.io/api/v1/title",
     {
       headers: {

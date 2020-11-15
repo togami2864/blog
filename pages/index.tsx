@@ -1,10 +1,14 @@
 import Head from "next/head";
 import Link from "next/link";
 import styled from "styled-components";
+import { GetStaticProps } from "next";
 
+import { allPostsData } from "../assets/js/types/postData";
 import { getAllPosts } from "../assets/js/helpers/getAllPosts";
+import { sanitizeDate } from "../assets/js/helpers/sanitizeDate";
 
-export default function Home() {
+export default function Home({ allPostsData }: { allPostsData: allPostsData }) {
+  console.log(sanitizeDate(allPostsData));
   return (
     <div>
       <Head>
@@ -29,6 +33,15 @@ export default function Home() {
     </div>
   );
 }
+
+export const getStaticProps: GetStaticProps = async () => {
+  const allPostsData = await getAllPosts();
+  return {
+    props: {
+      allPostsData,
+    },
+  };
+};
 
 const Lists = styled.main`
   margin: 40px;
