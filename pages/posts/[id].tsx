@@ -60,6 +60,9 @@ const Article = styled.div`
   strong {
     color: #ffa500;
   }
+  a:visited {
+    color: #ffff00;
+  }
 `;
 
 const Body = styled.div`
