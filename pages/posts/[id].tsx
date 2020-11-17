@@ -1,5 +1,6 @@
 import Highlight from "react-highlight";
 import Head from "next/head";
+import { Footer } from "../../components/Footer";
 import { GetStaticProps, GetStaticPaths } from "next";
 import { getPostId, getPostData } from "../../assets/js/helpers/getPosts";
 
@@ -22,6 +23,7 @@ export default function Post({ postData }) {
         <Body>
           <Highlight innerHTML={true}>{postData.body}</Highlight>
         </Body>
+        <Footer />
       </Article>
     </>
   );
@@ -46,6 +48,18 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 
 const Article = styled.div`
   margin: 40px;
+  font-size: 20px;
+  li {
+    list-style: disc;
+    list-style-position: inside;
+  }
+  h2 {
+    margin-top: 40px;
+    border-bottom: 1px solid white;
+  }
+  strong {
+    color: #ffa500;
+  }
 `;
 
 const Body = styled.div`

@@ -5,7 +5,7 @@ export const Footer = () => {
   return (
     <footer>
       <Link href="/" passHref>
-        <ToHome>Back To Home</ToHome>
+        <ToHome> Back To Home</ToHome>
       </Link>
     </footer>
   );

@@ -34,7 +34,7 @@ export default class MyDocument extends Document {
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link
             href="https://fonts.googleapis.com/css2?family=Alata&display=swap"
-            rel="stylesheet"
+            rel="preload"
           />
         </Head>
         <body>
