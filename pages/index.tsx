@@ -12,7 +12,7 @@ export default function Home({ allPostsData }: { allPostsData: allPostsData }) {
   return (
     <div>
       <Head>
-        <title>Create Next App</title>
+        <title>Blog</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

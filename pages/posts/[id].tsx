@@ -48,7 +48,8 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 
 const Article = styled.div`
   margin: 40px;
-  font-size: 20px;
+  font-size: 16px;
+  line-height: 1.5;
   li {
     list-style: disc;
     list-style-position: inside;
@@ -58,10 +59,10 @@ const Article = styled.div`
     border-bottom: 1px solid white;
   }
   strong {
-    color: #ffa500;
+    color: #ffff00;
   }
   a:visited {
-    color: #ffff00;
+    color: #ffa500;
   }
 `;
 
