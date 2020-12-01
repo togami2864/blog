@@ -7,6 +7,7 @@ export const GithubGraph = () => {
     GithubCalender(ref.current, "togami2864", {
       responsive: true,
       tooltips: true,
+      cache: 30 * 24,
     });
   });
   return (
