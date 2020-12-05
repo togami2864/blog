@@ -2,7 +2,7 @@
 import styled from "styled-components";
 import { ProfileIcon } from "../components/profile/ProfileIcon";
 import { Introduction } from "../components/profile/Introduction";
-import { SNS } from "../components/profile/Icon";
+import { SNS } from "../components/profile/SNS";
 import { GithubGraph } from "../components/profile/Github";
 
 export default function profile({}) {
