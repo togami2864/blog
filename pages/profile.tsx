@@ -2,6 +2,7 @@
 import styled from "styled-components";
 import { ProfileIcon } from "../components/profile/ProfileIcon";
 import { Introduction } from "../components/profile/Introduction";
+import { SNS } from "../components/profile/Icon";
 import { GithubGraph } from "../components/profile/Github";
 
 export default function profile({}) {
@@ -10,6 +11,7 @@ export default function profile({}) {
       <Profile>
         <ProfileIcon />
         <Introduction />
+        <SNS />
         <GithubGraph />
       </Profile>
     </>
