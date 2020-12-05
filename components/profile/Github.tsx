@@ -1,20 +1,13 @@
 import { useEffect, useRef } from "react";
+import dynamic from "next/dynamic";
 import styled from "styled-components";
-import GithubCalender from "github-calendar";
+const ReactGitHubCalendar = dynamic(() => import("react-ts-github-calendar"), {
+  ssr: false,
+});
 export const GithubGraph = () => {
-  const ref = useRef(null);
-  useEffect(() => {
-    GithubCalender(ref.current, "togami2864", {
-      responsive: true,
-      tooltips: true,
-      cache: 30 * 24,
-    });
-  });
   return (
     <Calender>
-      <div className="calender" ref={ref}>
-        Loading the data just for you.
-      </div>
+      <ReactGitHubCalendar userName="togami2864" tooltips />
     </Calender>
   );
 };
