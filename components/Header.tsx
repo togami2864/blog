@@ -8,6 +8,7 @@ export const Header: React.FC = () => {
       <Link href="/" passHref>
         <HeaderTitle>dev</HeaderTitle>
       </Link>
+      {/* <Link href="/profile">Profile</Link> */}
     </HeaderStyle>
   );
 };

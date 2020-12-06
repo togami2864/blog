@@ -7,14 +7,12 @@ import { GithubGraph } from "../components/profile/Github";
 
 export default function profile({}) {
   return (
-    <>
-      <Profile>
-        <ProfileIcon />
-        <Introduction />
-        <SNS />
-        <GithubGraph />
-      </Profile>
-    </>
+    <Profile>
+      <ProfileIcon />
+      <Introduction />
+      <SNS />
+      <GithubGraph />
+    </Profile>
   );
 }
 
