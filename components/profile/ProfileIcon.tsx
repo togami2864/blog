@@ -1,10 +1,20 @@
 import styled from "styled-components";
-import Image from "next/image";
+import { applyPolyfills, defineCustomElements } from "@uit/glitch-image/loader";
+
+applyPolyfills().then(() => {
+  defineCustomElements();
+});
 
 export const ProfileIcon = () => {
-  return <Icon src="/profile.jpg" width={200} height={200} />;
+  return (
+    <Icon>
+      <glitch-image src="/profile.jpg" />
+    </Icon>
+  );
 };
 
-const Icon = styled(Image)`
-  border-radius: 25%;
+const Icon = styled.div`
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
 `;

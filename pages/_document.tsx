@@ -50,10 +50,6 @@ export default class MyDocument extends Document {
             }}
           />
           <meta charSet="utf8" />
-          <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, viewport-fit=cover"
-          />
           <meta property="og:title" content="migatodev" />
           <meta property="og:site_name" content="migatodev" />
           <meta property="og:locale" content="ja_JP" />

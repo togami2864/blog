@@ -1204,6 +1204,11 @@
     "@types/react-native" "*"
     csstype "^3.0.2"
 
+"@uit/glitch-image@^0.0.10":
+  version "0.0.10"
+  resolved "https://registry.yarnpkg.com/@uit/glitch-image/-/glitch-image-0.0.10.tgz#6bb040a7c07747513b23ce06ba3deebf86595505"
+  integrity sha512-kuLhLUMNPS8snH6Zwk0kTltm6YRNDsh1jTAXP1JElpcIUgsyHh4clZqQczMEHC7jjsslj3MGp1MBuLApn67Nng==
+
 "@webassemblyjs/ast@1.9.0":
   version "1.9.0"
   resolved "https://registry.yarnpkg.com/@webassemblyjs/ast/-/ast-1.9.0.tgz#bd850604b4042459a5a41cd7d338cbed695ed964"
