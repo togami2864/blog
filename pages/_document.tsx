@@ -49,6 +49,34 @@ export default class MyDocument extends Document {
           `,
             }}
           />
+          <meta charSet="utf8" />
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, viewport-fit=cover"
+          />
+          <meta property="og:title" content="tgmmgt's blog" />
+          <meta property="og:site_name" content="tgmmgt's blog" />
+          <meta property="og:locale" content="ja_JP" />
+          <meta
+            name="og:description"
+            content="見習いdeveloper 主にフロントエンドののブログ"
+          />
+          <meta
+            name="description"
+            content="見習いdeveloper 主にフロントエンドののブログ"
+          />
+          <meta property="og:url" content="https://pizapizahiza.dev" />
+          <meta name="twitter:site" content="@3tgmmgt3" />
+          <meta property="og:type" content="website" />
+          <meta name="twitter:card" content="summary" />
+          <meta
+            property="og:image"
+            content="https://shinyaigeek.dev/profile.jpg"
+          />
+          <meta
+            name="twitter:image"
+            content="https://shinyaigeek.dev/profile.png"
+          />
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link
             href="https://fonts.googleapis.com/css2?family=Alata&display=swap"

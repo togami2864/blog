@@ -4,6 +4,8 @@ import { ProfileIcon } from "../components/profile/ProfileIcon";
 import { Introduction } from "../components/profile/Introduction";
 import { SNS } from "../components/profile/SNS";
 import { GithubGraph } from "../components/profile/Github";
+import { Experience } from "../components/profile/Experience";
+import { Interest } from "../components/profile/Interest";
 
 export default function profile({}) {
   return (
@@ -12,6 +14,8 @@ export default function profile({}) {
       <Introduction />
       <SNS />
       <GithubGraph />
+      <Experience />
+      <Interest />
     </Profile>
   );
 }
