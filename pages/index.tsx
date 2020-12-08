@@ -23,14 +23,14 @@ export default function Home({ allPostsData }: { allPostsData: allPostsData }) {
       <Lists>
         {posts.map((post, index) => {
           return (
-            <div key={index}>
+            <Contents key={index}>
               <Link href={`/posts/${post.id}`}>
                 <a>
                   <Title>{post.title}</Title>
                   <Date>{post.date}</Date>
                 </a>
               </Link>
-            </div>
+            </Contents>
           );
         })}
       </Lists>
@@ -49,6 +49,11 @@ export const getStaticProps: GetStaticProps = async () => {
 
 const Lists = styled.main`
   margin: 40px;
+`;
+
+const Contents = styled.div`
+  border-bottom: 1px solid yellow;
+  margin-bottom: 20px;
 `;
 
 const Title = styled.h1`

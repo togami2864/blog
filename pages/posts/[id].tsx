@@ -61,6 +61,10 @@ const Article = styled.div`
   strong {
     color: #ffff00;
   }
+  img {
+    max-width: 920px;
+  }
+
   a:visited {
     color: #ffa500;
   }
