@@ -55,11 +55,11 @@ export default class MyDocument extends Document {
           <meta property="og:locale" content="ja_JP" />
           <meta
             name="og:description"
-            content="見習いdeveloper 主にフロントエンドののブログ"
+            content="見習いdeveloper 主にフロントエンドのブログ兼実験場"
           />
           <meta
             name="description"
-            content="見習いdeveloper 主にフロントエンドののブログ"
+            content="見習いdeveloper 主にフロントエンドのブログ兼実験場"
           />
           <meta property="og:url" content="https://pizapizahiza.dev" />
           <meta name="twitter:site" content="@migatodev" />
