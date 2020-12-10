@@ -52,8 +52,8 @@ const Lists = styled.main`
 `;
 
 const Contents = styled.div`
-  border-bottom: 1px solid yellow;
-  margin-bottom: 20px;
+  // border-bottom: 1px solid yellow;
+  margin-bottom: 40px;
 `;
 
 const Title = styled.h1`
