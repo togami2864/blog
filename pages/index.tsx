@@ -52,7 +52,6 @@ const Lists = styled.main`
 `;
 
 const Contents = styled.div`
-  // border-bottom: 1px solid yellow;
   margin-bottom: 40px;
 `;
 
