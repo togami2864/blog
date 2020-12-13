@@ -12,6 +12,7 @@ export default function Post({ postData }) {
     <>
       <Head>
         <title>{postData.title}</title>
+        <meta property="og:title" content={postData.title} />
         <link
           href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/styles/atom-one-light.min.css"
           rel="stylesheet"
