@@ -71,7 +71,7 @@ export default class MyDocument extends Document {
           />
           <meta
             name="twitter:image"
-            content="https://pizapizahiza.dev/profile.png"
+            content="https://pizapizahiza.dev/profile.jpg"
           />
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link
