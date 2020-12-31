@@ -50,8 +50,8 @@ export default class MyDocument extends Document {
             }}
           />
           <meta charSet="utf8" />
-          <meta property="og:title" content="migatodev" />
-          <meta property="og:site_name" content="migatodev" />
+          <meta property="og:title" content="togami2864" />
+          <meta property="og:site_name" content="togami2864" />
           <meta property="og:locale" content="ja_JP" />
           <meta
             name="og:description"
