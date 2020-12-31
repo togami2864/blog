@@ -6,23 +6,23 @@ import { getPostId, getPostData } from "../assets/js/helpers/getPosts";
 
 import styled from "styled-components";
 
-export default function Post({ postData }) {
-  postData.date = postData.date.slice(0, 10);
+export default function Post({ content }) {
+  content.date = content.date.slice(0, 10);
   return (
     <>
       <Head>
-        <title>{postData.title}</title>
-        <meta property="og:title" content={postData.title} />
+        <title>{content.title}</title>
+        <meta property="og:title" content={content.title} />
         <link
           href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/styles/atom-one-light.min.css"
           rel="stylesheet"
         />
       </Head>
       <Article>
-        <Title>{postData.title}</Title>
-        <Date>{postData.date}</Date>
+        <Title>{content.title}</Title>
+        <Date>{content.date}</Date>
         <Body>
-          <Highlight innerHTML={true}>{postData.body}</Highlight>
+          <Highlight innerHTML={true}>{content.body}</Highlight>
         </Body>
         <Footer />
       </Article>
