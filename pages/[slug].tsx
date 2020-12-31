@@ -31,7 +31,11 @@ export default function Post({ content }) {
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const paths = await getPostId();
+  const paths = {
+    params: {
+      id: "preview",
+    },
+  };
   return {
     paths,
     fallback: true,
@@ -44,7 +48,7 @@ export const getStaticProps = async (context) => {
   const content = await fetch(
     `https://devtogami.microcms.io/api/v1/blog/
 ${slug}${draftKey !== undefined ? `?draftKey=${draftKey}` : ""}`,
-    { headers: { "X-API-KEY": process.env.apiKey || "" } }
+    { headers: { "X-API-KEY": process.env.microCMS || "" } }
   ).then((res) => res.json());
   return {
     props: {
