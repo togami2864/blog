@@ -4,7 +4,7 @@ export default async (req, res) => {
     return res.status(404).end();
   }
   const content = await fetch(
-    `https://devtogami.microcms.io/apis/blog/${req.query.slug}?fields=id&draftKey=${req.query.draftKey}`,
+    `https://devtogami.microcms.io/api/blog/${req.query.slug}?fields=id&draftKey=${req.query.draftKey}`,
     { headers: { "X-API-KEY": process.env.microCMS || "" } }
   )
     .then((res) => res.json())
