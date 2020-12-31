@@ -6,9 +6,8 @@ export const Header: React.FC = () => {
   return (
     <HeaderStyle>
       <Link href="/" passHref>
-        <HeaderTitle>migatodev</HeaderTitle>
+        <HeaderTitle>togami2864</HeaderTitle>
       </Link>
-      {/* <Link href="/profile">Profile</Link> */}
     </HeaderStyle>
   );
 };
