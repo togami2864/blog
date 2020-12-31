@@ -12,7 +12,7 @@ export default function Home({ allPostsData }: { allPostsData: allPostsData }) {
   return (
     <div>
       <Head>
-        <title>migatodev</title>
+        <title>togami2864</title>
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, viewport-fit=cover"
