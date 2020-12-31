@@ -2,7 +2,7 @@ import { allPostsData, postData } from "../types/postData";
 
 export const getAllPosts = async () => {
   const allPosts: allPostsData = await fetch(
-    "https://devtogami.microcms.io/api/v1/title",
+    "https://devtogami.microcms.io/api/v1/blog",
     {
       headers: {
         "X-API-KEY": process.env.microCMS,
@@ -14,7 +14,7 @@ export const getAllPosts = async () => {
 
 export const getPostId = async () => {
   const posts: allPostsData = await fetch(
-    "https://devtogami.microcms.io/api/v1/title",
+    "https://devtogami.microcms.io/api/v1/blog",
     {
       headers: {
         "X-API-KEY": process.env.microCMS,
@@ -32,7 +32,7 @@ export const getPostId = async () => {
 
 export const getPostData = async (id: string) => {
   const posts: allPostsData = await fetch(
-    "https://devtogami.microcms.io/api/v1/title",
+    "https://devtogami.microcms.io/api/v1/blog",
     {
       headers: {
         "X-API-KEY": process.env.microCMS,

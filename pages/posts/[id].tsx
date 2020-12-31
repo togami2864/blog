@@ -65,7 +65,11 @@ const Article = styled.div`
   img {
     max-width: 920px;
   }
-
+  blockquote {
+    color: black;
+    background-color: #fafafa;
+  }
+  a:link,
   a:visited {
     color: #ffa500;
   }
