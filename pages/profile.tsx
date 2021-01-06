@@ -5,9 +5,10 @@ import { Introduction } from "../components/profile/Introduction";
 import { SNS } from "../components/profile/SNS";
 import { GithubGraph } from "../components/profile/Github";
 import { Experience } from "../components/profile/Experience";
+import { Skills } from "../components/profile/Skills";
 import { Interest } from "../components/profile/Interest";
 
-export default function profile({}) {
+export default function profile() {
   return (
     <Profile>
       <ProfileIcon />
@@ -15,6 +16,7 @@ export default function profile({}) {
       <SNS />
       <GithubGraph />
       <Experience />
+      <Skills />
       <Interest />
     </Profile>
   );

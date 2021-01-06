@@ -13,6 +13,7 @@ const ExpStyle = styled.div`
   margin: 80px 0 50px 0;
   padding-top: 20px;
   border-top: 1px solid white;
+  text-align: left;
   h2 {
     margin: 0;
   }
