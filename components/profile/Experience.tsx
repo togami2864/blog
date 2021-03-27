@@ -5,6 +5,8 @@ export const Experience = () => {
       <h1>Experience</h1>
       <h2>・snaq.me,Inc (July 2020 ~)</h2>
       <p> FrontEnd : HTML/CSS/React/TypeScript/AWS</p>
+      <h2>・Wanteldy,Inc (March 2021 ~)</h2>
+      <p> FrontEnd : React/TypeScript</p>
     </ExpStyle>
   );
 };
