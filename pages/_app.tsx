@@ -5,7 +5,6 @@ import { theme } from "../assets/js/styles/theme";
 import { GlobalStyle } from "../assets/js/styles/global";
 import { useEffect } from "react";
 import { useRouter } from "next/router";
-import { Menu } from "../components/menu/Menu";
 import * as gtag from "../lib/gtag";
 
 export default function App({ Component, pageProps }: AppProps) {
@@ -22,7 +21,6 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
-      <Menu />
       <Layout>
         <Component {...pageProps} />
       </Layout>
