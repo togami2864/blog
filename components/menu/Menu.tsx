@@ -9,7 +9,7 @@ export const Menu = () => {
   };
   return (
     <HamburgerMenu>
-      <label>
+      {/* <label>
         <input type="checkbox" ref={ref} />
         <span className="menu">
           <span className="hamburger"></span>
@@ -21,8 +21,11 @@ export const Menu = () => {
           <li onClick={handleMove}>
             <Link href="/profile">Profile</Link>
           </li>
+          <li onClick={handleMove}>
+            <Link href="/oss">OSS</Link>
+          </li>
         </ul>
-      </label>
+      </label> */}
     </HamburgerMenu>
   );
 };
