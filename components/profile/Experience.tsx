@@ -7,6 +7,8 @@ export const Experience = () => {
       <p> FrontEnd : HTML/CSS/React/TypeScript/AWS</p>
       <h2>・Wanteldy,Inc (March 2021 ~)</h2>
       <p> FrontEnd : React/TypeScript</p>
+      <h2>・CyberAgent,Inc (March 2021 ~)</h2>
+      <p>2 days hackathon</p>
     </ExpStyle>
   );
 };
