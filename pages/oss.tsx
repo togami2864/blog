@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import Image from "next/image";
 import jsdom from "jsdom";
 const { JSDOM } = jsdom;
 export default function OSS({ cardDatas }) {
@@ -9,7 +8,7 @@ export default function OSS({ cardDatas }) {
       <PRList>
         {cardDatas.map((data, index) => (
           <LinkToPr key={index} href={data.url} target="_blank">
-            <Image src={data.image} width="500" height="300" />
+            <Image src={data.image} />
           </LinkToPr>
         ))}
       </PRList>
@@ -73,12 +72,18 @@ export const getServerSideProps = async () => {
 
 const PRList = styled.ul`
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
 `;
 
 const LinkToPr = styled.a`
   display: block;
-  width: 500px;
+  width: 400px;
   margin: 20px;
+`;
+
+const Image = styled.img`
+  width: 100%;
+  overflow: hidden;
 `;
