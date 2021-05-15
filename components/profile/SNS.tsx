@@ -4,7 +4,7 @@ import styled from "styled-components";
 export const SNS = () => {
   return (
     <Icon>
-      <Twitter href="https://twitter.com/3tgmmgt3" target="_blank">
+      <Twitter href="https://twitter.com/migatodev" target="_blank">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="40"
